@@ -1,0 +1,8 @@
+amazon.com
+netflix.com
+google.com
+fortinet.com
+nytimes.com
+aws.amazon.com
+medium.com
+yts.com

@@ -1,0 +1,13 @@
+{"Domain": "amazon.com\n", "Category": "Shopping"}
+{"Domain": "netflix.com\n", "Category": "Streaming Media and Download"}
+{"Domain": "google.com\n", "Category": "Search Engines and Portals"}
+{"Domain": "amazon.co", "Category": "Shopping"}
+{"Domain": "netflix.co", "Category": "Streaming Media and Download"}
+{"Domain": "amazon.com", "Category": "Shopping"}
+{"Domain": "netflix.com", "Category": "Streaming Media and Download"}
+{"Domain": "google.com", "Category": "Search Engines and Portals"}
+{"Domain": "fortinet.com", "Category": "Information Technology"}
+{"Domain": "nytimes.com", "Category": "News and Media"}
+{"Domain": "aws.amazon.com", "Category": "Information Technology"}
+{"Domain": "medium.com", "Category": "News and Media"}
+{"Domain": "yts.com", "Category": "Malicious Websites"}
