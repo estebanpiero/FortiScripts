@@ -4,12 +4,18 @@ import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 
-chrome_driver_path = 'D:\Developers\chrome\chromedriver.exe'
+chrome_driver_path = 'E:\Developer\FGuard_WebFilter\chromedriver.exe'
 chrome_options = Options()
 chrome_options.add_experimental_option('detach',True)   #Avoids Selenium to close the browser
-driver = webdriver.Chrome(executable_path=chrome_driver_path,chrome_options=chrome_options)
+
+# Create a Service object
+service = Service(executable_path=chrome_driver_path)
+
+
+driver = webdriver.Chrome(service=service,options=chrome_options)
 
 domains_file = open('Domains.txt','r')
 domains_list = domains_file.readlines()
