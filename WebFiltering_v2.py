@@ -21,7 +21,7 @@ for domain in domains_list:
     
     search.send_keys(domain)
     search.send_keys(Keys.ENTER)
-    time.sleep(5)
+    time.sleep(2)
     category_response = driver.find_element(By.CLASS_NAME, value='info_title').text
     
     #print('---------------------')
