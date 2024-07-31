@@ -4,10 +4,10 @@ This repository contains a Python script that uses Selenium to automate the proc
 ## Prerequisites
 Before you can run the script, you need to have the following installed:
 
-Python 3.x
-Selenium
-Google Chrome
-ChromeDriver
+1. Python 3.x
+2. Selenium
+3. Google Chrome
+4. ChromeDriver
 
 ## Setup
 
