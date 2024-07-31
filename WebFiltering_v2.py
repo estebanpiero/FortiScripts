@@ -42,5 +42,5 @@ for domain in domains_list:
         json.dump(domain, outputs)
         outputs.write('\n')
 
-    print(domain)
+driver.quit()
 
