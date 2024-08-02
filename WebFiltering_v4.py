@@ -55,7 +55,7 @@ for domain in domains_list:
             
         
         except NoSuchElementException:
-            print(f"No such element: Unable to locate element with css selector'")
+            print(f"IP has been flagged'")
             ip_flagged = True
             driver.quit()
             time.sleep(10)
