@@ -25,6 +25,12 @@ pip install selenium
 
 - Download ChromeDriver:
 
+__Note: For versions 115 and newer__
+
+Starting with M115 the ChromeDriver release process is integrated with that of Chrome. The latest Chrome + ChromeDriver releases per release channel (Stable, Beta, Dev, Canary) are available at the Chrome for Testing (CfT) availability dashboard. As a result, you might no longer have a need for version selection — you could choose any available CfT version and download the correspondingly-versioned ChromeDriver binary.
+
+__For Previous Versions__
+
 1. Download ChromeDriver from [https://googlechromelabs.github.io/chrome-for-testing]
 2. Place the chromedriver.exe file in the appropriate location (update the chrome_driver_path variable in the script if needed).
 
