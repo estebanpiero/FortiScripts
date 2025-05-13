@@ -55,9 +55,23 @@ def compare_users(csv_users, ldap_users):
     print("\n⚠️ Users ONLY in LDAP:")
     print(tabulate([[u] for u in only_in_ldap], headers=["Username"], tablefmt="grid"))
 
+# === Step 4: Save comparison results to CSV ===
+def save_comparison_to_csv(comparison_data, output_path='user_comparison_report.csv'):
+    # Create DataFrames  
+    df_ldap_only = pd.DataFrame({'Username': comparison_data['only_in_ldap']})
+
+    # Combine all DataFrames
+    combined_df = pd.concat([df_ldap_only])
+    
+    # Save to CSV
+    combined_df.to_csv(output_path, index=False)
+    print(f"\n📊 Comparison report saved to: {output_path}")
+
+
 # === Main logic ===
 if __name__ == '__main__':
-    csv_path = os.getenv("CSV_PATH", "vpn-connections-report.csv")
+    csv_path = 'vpn-connections-report.csv'
     csv_users = get_csv_usernames(csv_path)
     ldap_users = get_ldap_usernames()
-    compare_users(csv_users, ldap_users)
+    comparison_results = compare_users(csv_users, ldap_users)
+    save_comparison_to_csv(comparison_results)
